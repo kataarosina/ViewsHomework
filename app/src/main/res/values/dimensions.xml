@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flag_width">146dp</dimen>
+    <dimen name="flag_height">92dp</dimen>
+    <dimen name="flag_margin">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="margin_top_text">4dp</dimen>
+    <dimen name="cross_line_width">8dp</dimen>
+    <dimen name="cross_line_len">20dp</dimen>
+</resources>

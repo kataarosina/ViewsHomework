@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ViewsHomework</string>
+    <string name="austria_text">Austria</string>
+    <string name="poland_text">Poland</string>
+    <string name="italy_text">Italy</string>
+    <string name="columbia_text">Columbia</string>
+    <string name="madagascar_text">Madagascar</string>
+    <string name="thailand_text">Thailand</string>
+    <string name="denmark_text">Denmark</string>
+    <string name="switzerland_text">Switzerland</string>
 </resources>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Austria-->
+    <LinearLayout
+        android:id="@+id/flag_austria"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/flag_poland"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/red" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_austria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/flag_margin"
+        android:text="@string/austria_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_austria"
+        app:layout_constraintStart_toStartOf="@+id/flag_austria"
+        app:layout_constraintTop_toBottomOf="@+id/flag_austria" />
+
+    <!-- Poland -->
+    <LinearLayout
+        android:id="@+id/flag_poland"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_austria"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/red" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_poland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poland_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_poland"
+        app:layout_constraintStart_toStartOf="@+id/flag_poland"
+        app:layout_constraintTop_toBottomOf="@+id/flag_poland" />
+
+    <!-- Italy -->
+    <LinearLayout
+        android:id="@+id/flag_italy"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/flag_columbia"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_austria">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_italy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/italy_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_italy"
+        app:layout_constraintStart_toStartOf="@+id/flag_italy"
+        app:layout_constraintTop_toBottomOf="@+id/flag_italy" />
+
+    <!-- Columbia -->
+    <LinearLayout
+        android:id="@+id/flag_columbia"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_italy"
+        app:layout_constraintTop_toBottomOf="@+id/text_poland">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/yellow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/red" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_columbia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/columbia_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_columbia"
+        app:layout_constraintStart_toStartOf="@+id/flag_columbia"
+        app:layout_constraintTop_toBottomOf="@+id/flag_columbia" />
+
+    <!-- Madagascar -->
+    <LinearLayout
+        android:id="@+id/flag_madagascar"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/flag_thailand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_italy">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/red" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/green" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_madagascar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/madagascar_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_madagascar"
+        app:layout_constraintStart_toStartOf="@+id/flag_madagascar"
+        app:layout_constraintTop_toBottomOf="@+id/flag_madagascar" />
+
+
+    <!-- Thailand -->
+    <LinearLayout
+        android:id="@+id/flag_thailand"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_madagascar"
+        app:layout_constraintTop_toBottomOf="@+id/text_columbia">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/dark_red" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@color/blue" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/dark_red" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_thailand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thailand_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_thailand"
+        app:layout_constraintStart_toStartOf="@+id/flag_thailand"
+        app:layout_constraintTop_toBottomOf="@+id/flag_thailand" />
+
+    <!-- Denmark -->
+    <FrameLayout
+        android:id="@+id/flag_denmark"
+        android:layout_width="@dimen/flag_width"
+        android:layout_height="@dimen/flag_height"
+        android:layout_margin="@dimen/flag_margin"
+        app:layout_constraintEnd_toStartOf="@+id/flag_switzerland"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_madagascar">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="28dp"
+            android:background="@color/white" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_denmarc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/denmark_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_denmark"
+        app:layout_constraintStart_toStartOf="@+id/flag_denmark"
+        app:layout_constraintTop_toBottomOf="@+id/flag_denmark" />
+
+
+    <!-- Switherland -->
+    <FrameLayout
+        android:id="@+id/flag_switzerland"
+        android:layout_width="@dimen/flag_height"
+        android:layout_height="@dimen/flag_height"
+
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="@dimen/flag_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flag_denmark"
+        app:layout_constraintTop_toBottomOf="@+id/text_thailand">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_switherland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switzerland_text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="@+id/flag_switzerland"
+        app:layout_constraintStart_toStartOf="@+id/flag_switzerland"
+        app:layout_constraintTop_toBottomOf="@+id/flag_switzerland" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
