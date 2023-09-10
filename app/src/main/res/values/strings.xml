@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ViewsHomework</string>
+    <string name="enter_url">Введите URL изображения</string>
 </resources>
